@@ -74,7 +74,7 @@
 
 .recent h1 {
     font-size: 1.2rem;
-    font-family: Poppins;
+    font-family: ABeeZee;
     margin-bottom: 30px;
     color:rgb(153, 160, 153);
 }
@@ -155,7 +155,7 @@
     color: rgb(81, 81, 81);
     font-size: .9rem;
     font-weight: 400;
-    font-family: Poppins;
+    font-family: ABeeZee;
     margin: 0px;
 
 }
@@ -167,7 +167,7 @@
 .bankInfo .accountBalance{
     color: rgb(81, 81, 81);
     font-size: 1.3rem;
-    font-family: Poppins;
+    font-family: ABeeZee;
     color:rgb(109, 156, 109);
     font-weight: 300;
     margin: 0px;
@@ -256,7 +256,7 @@
     font-size: .9rem;
     font-weight: 400;
     margin-bottom: 30px;
-    font-family: Poppins;
+    font-family: ABeeZee;
 
 }
 
@@ -320,7 +320,7 @@
     font-size: .9rem;
     color: rgb(82, 82, 82);
     font-weight: 400;
-    font-family: Poppins;
+    font-family: ABeeZee;
 
 }
 
@@ -401,7 +401,7 @@ table th {
     padding-top: 10px;
     padding-bottom: 10px;
     font-weight: lighter;
-    font-family: Poppins;
+    font-family: ABeeZee;
 }
 
 
@@ -411,7 +411,7 @@ table td {
     color: #474747;
     font-weight: lighter;
     font-size: .9rem;
-    font-family: Poppins;
+    font-family: ABeeZee;
 }
 
 .bullet{
@@ -470,7 +470,7 @@ table td {
     padding: 10px;
     width: 150px;
     margin-right: 10px;
-    font-family: Poppins;
+    font-family: ABeeZee;
     text-align: center;
     margin-bottom: 20px;
     padding-top: 30px;
@@ -491,7 +491,7 @@ table td {
 }
 .metrics .number{
     font-size: 2rem;
-    font-family: Poppins;
+    font-family: ABeeZee;
     margin: 0px;
     color:rgb(109, 156, 109);;
     font-weight:lighter;

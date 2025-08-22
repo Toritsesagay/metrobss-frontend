@@ -145,7 +145,7 @@ table td{
 }
 .options p{
     font-size: 1rem;
-    font-family: Poppins;
+    font-family: ABeeZee;
     color: rgb(70, 70, 70);
     cursor: pointer;
 
@@ -167,7 +167,7 @@ table td{
     background-color: rgb(109, 156, 109);
     color: #fff;
     font-size: 1rem;
-    font-family: Poppins;
+    font-family: ABeeZee;
 }
 
 /*styling the favorite list card */
@@ -191,7 +191,7 @@ table td{
 
 .form h6{
     margin-bottom: 30px;
-    font-family: Poppins;
+    font-family: ABeeZee;
 }
 
 

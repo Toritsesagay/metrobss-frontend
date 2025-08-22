@@ -42,7 +42,7 @@
     border: none;
     border-radius: 50px;
     font-size: 1rem;
-    font-family: Poppins;
+    font-family: ABeeZee;
     font-weight: 600px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -82,7 +82,7 @@
 .header h4 {
     color: #303030;
     font-size: 1.1rem;
-    font-family: Poppins;
+    font-family: ABeeZee;
 }
 
 
@@ -116,7 +116,7 @@ table th {
     padding-top: 10px;
     padding-bottom: 10px;
     font-weight: lighter;
-    font-family: Poppins;
+    font-family: ABeeZee;
 }
 
 
@@ -126,7 +126,7 @@ table td {
     color: #474747;
     font-weight: lighter;
     font-size: .9rem;
-    font-family: Poppins;
+    font-family: ABeeZee;
 }
 
 .bullet{

@@ -295,7 +295,7 @@ function Dashboard() {
 
                         <div className={styles.helpCard}>
                             <div className={styles.header}>
-                                <h4 style={{ fontWeight: '300', fontFamily: 'Poppins' }}> <span className={styles.block}></span>Recent transactions</h4>
+                                <h4 style={{ fontWeight: '300', fontFamily: 'ABeeZee' }}> <span className={styles.block}></span>Recent transactions</h4>
                             </div>
 
 
