@@ -373,7 +373,7 @@
 
 
 table {
-  width: 600px;
+  width: 300px;
   border-collapse: collapse; /* optional */
   table-layout: fixed;       /* equal spacing */
 }
@@ -385,7 +385,7 @@ td {
 
 
 table {
-  width: 700px;
+  width: 500px;
   border-collapse: separate;   /* keep spacing */
   border-spacing: 0 5px;      /* vertical space between rows */
 }
