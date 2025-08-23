@@ -1,109 +1,69 @@
-
-/* styling the tab section */
-.tab {
-    width: 100%;
-    display: none;
-    background-color: #fff;
-    z-index: 10;
-    position: sticky;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
-    /*border-top: 1px solid rgb(228, 228, 228);*/
-    box-shadow: 5px 2px 0px rgba(136, 136, 136, 0.1);
+.tabContainer {
+  bottom: 20px;
+  display:none;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 12px 5px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  z-index: 50;
 }
 
-.tabsection,
-.tabsectionMiddle {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    cursor: pointer;
+.tabItem {
+  flex: 1;
+  text-align: center;
+  color: #444;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
-.tabsectionMiddle {
-    position: relative;
+.tabItem span {
+  margin-top: 4px;
+  font-size: 0.75rem;
 }
 
-.tabsectionMiddle span {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 100%;
-    position: absolute;
-    top: -47px;
-    box-shadow: 0 2px 2px 3px rgba(182, 182, 182, 0.1);
+.tabItem.active {
+  color: rgb(109, 156, 109);
 }
 
-
-.tabsection p {
-    font-weight: 700;
-    color: rgb(105, 105, 105);
-    margin-bottom: 0px;
-    padding: 0px;
-    font-size: .8rem;
-
-
+.activeIndicator {
+  position: absolute;
+  bottom: -6px;
+  height: 3px;
+  width: 24px;
+  background: rgb(109, 156, 109);
+  border-radius: 2px;
 }
 
-.tabsection span {
-    font-size: 1.3rem;
-    color: rgb(109, 156, 109);
-    margin-bottom: 0px;
-    padding: 0px;
-
-}
-
-.tabsection:nth-of-type(1) {}
-
-
-/* small laptop screens */
-@media screen and (max-width:1024px) {}
-
-/* ipad screens */
-
-@media screen and (max-width:768px) {
-   
-
-
-
+.addButton {
+  background: rgb(109, 156, 109);
+  color: white;
+  border-radius: 50%;
+  padding: 12px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(109, 156, 109, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 
-/* mobile screen*/
 
 @media screen and (max-width: 480px) {
-   
-    /* tab section */
-    .tab {
-        display: flex;
-        background-color: #fff;
-        height: 13vh;
-        align-items: center;
-    }
-
-
-
-
-
-}
-
-
-@media screen and (max-width: 230px) {
-    .tabsection p {
-        font-size: .6rem;
-
-
-    }
-
-    .tabsection span {
-        font-size: 1.1rem;
-
-    }
-
-    .tabsectionMiddle span {
-        padding: 10px;
-    }
+  .tabContainer{
+    display:flex;
+  }
 
 }

@@ -64,7 +64,7 @@ function Header({ home, title }) {
                             <MdNotifications 
                                 className={styles.icon} 
                                 onClick={notificationHandler} 
-                                size={32} 
+                                size={35} 
                             />
                         </div>
                     )}
@@ -73,7 +73,7 @@ function Header({ home, title }) {
                         <MdMenu 
                             className={`${styles.hamburger} ${styles.icon}`} 
                             onClick={menuHandler} 
-                            size={30} 
+                            size={35} 
                         />
                     )}
                 </div>
@@ -81,31 +81,31 @@ function Header({ home, title }) {
 
             <ul className={`${styles.mobilemenu} ${isShowMenu ? styles.showmenu : ''}`}>
                 <li className={styles.item} onClick={() => navigateHandler('dashboard')}>
-                  <MdHome size={20} className={styles.icon} /> Home
+                  <MdHome size={22} className={styles.icon} /> Home
                 </li>
                 <li className={styles.item} onClick={() => navigateHandler('profile')}>
-                  <MdPerson size={20} className={styles.icon} /> Profile
+                  <MdPerson size={22} className={styles.icon} /> Profile
                 </li>
                 <li className={styles.item} onClick={() => navigateHandler('deposit')}>
-                  <MdAccountBalanceWallet size={20} className={styles.icon} /> Deposit
+                  <MdAccountBalanceWallet size={22} className={styles.icon} /> Deposit
                 </li>
                 <li className={styles.item} onClick={() => navigateHandler('withdraw')}>
-                  <MdPayment size={20} className={styles.icon} /> Bill Pay
+                  <MdPayment size={22} className={styles.icon} /> Bill Pay
                 </li>
                 <li className={styles.item} onClick={() => navigateHandler('transfer')}>
-                  <MdSend size={20} className={styles.icon} /> Transfer
+                  <MdSend size={22} className={styles.icon} /> Transfer
                 </li>
                 <li className={styles.item} onClick={() => navigateHandler('card')}>
-                  <MdCreditCard size={20} className={styles.icon} /> Card
+                  <MdCreditCard size={22} className={styles.icon} /> Card
                 </li>
                 <li className={styles.item} onClick={() => navigateHandler('loan')}>
-                  <MdAccountBalance size={20} className={styles.icon} /> Loan
+                  <MdAccountBalance size={22} className={styles.icon} /> Loan
                 </li>
                 <li className={styles.item} onClick={() => navigateHandler('transaction-history')}>
-                  <MdHistory size={20} className={styles.icon} /> History
+                  <MdHistory size={22} className={styles.icon} /> History
                 </li>
                 <li className={styles.item} onClick={() => navigateHandler('settings')}>
-                  <MdSettings size={20} className={styles.icon} /> Settings
+                  <MdSettings size={22} className={styles.icon} /> Settings
                 </li>
                
             </ul>
