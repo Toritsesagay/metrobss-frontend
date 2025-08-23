@@ -14,11 +14,11 @@
 .mainscreen {
     display: flex;
     flex-direction: column;
-    padding-left: 30px;
+   
 }
 
 .mainscreenleft {
-    width: 60%;
+    width: 70%;
     padding: 10px;
 }
 
@@ -280,12 +280,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 20px;
-
-
 }
-
-
-
 
 
 .summarySectionLeft .imageContainer {
@@ -348,7 +343,7 @@
     margin-bottom: 20px;
     overflow: hidden;
     margin-top: 10px;
-    padding: 20px;
+    padding: 7px;
 }
 
 
@@ -378,21 +373,39 @@
 
 
 table {
-    width:600px;
+  width: 700px;
+  border-collapse: collapse; /* optional */
+  table-layout: fixed;       /* equal spacing */
+}
+
+td {
+  text-align: center;  
+  overflow-x: scroll;      /* center text inside cells */
+}
+
+
+table {
+  width: 700px;
+  border-collapse: separate;   /* keep spacing */
+  border-spacing: 0 5px;      /* vertical space between rows */
 }
 
 table tr {
-    margin-bottom: 20px;
-    background-color: #fff;
+  background-color: #fff;
+  transition: background-color 0.2s ease-in-out;
 }
 
 table tr:hover {
-    background-color: #f4f4f4;
+  background-color: #f4f4f4;
 }
 
+th, td {
+  padding: 5px 10px;          /* consistent padding inside cells */
+  border-bottom: 4px solid #f6f6f6; /* lighter row divider */
+  text-align: left;            /* aligns content neatly */
+  height: 65px;
+}
 
-
-th, td { border-bottom: 10px solid rgb(246, 246, 246);padding: 5px;margin: 5px;height:65px }
 
 
 table th {
@@ -447,10 +460,17 @@ table td {
 
 .inputContainer{
     width:80%;
-    margin-right: 10%;
-    margin-left: 10%;
     margin-bottom: 50px;
 }
+
+
+
+.title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #666;
+}
+
 
 .inputContainer label{
     font-size: 1.3rem;
@@ -459,43 +479,53 @@ table td {
 
 
 
-.metricsContainer{
-    display: flex;
-    margin-bottom: 30px;
-}
-
-.metrics{
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 10px;
-    width: 150px;
-    margin-right: 10px;
-    font-family: ABeeZee;
-    text-align: center;
-    margin-bottom: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    cursor: pointer;
-}
-
-.metrics:hover{
-    box-shadow: 0 2px 5px rgba(136, 136, 136, 0.1);
-}
-
-.metrics .title{
-    font-size: .9rem;
-    color:rgb(121, 121, 121);
-    margin: 0px;
 
 
+.metricsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  width: 100%;         /* full width of screen */
+  padding: 0 0rem;   /* side spacing */
+  box-sizing: border-box;
+  margin-bottom: 20px;
 }
-.metrics .number{
-    font-size: 2rem;
-    font-family: ABeeZee;
-    margin: 0px;
-    color:rgb(109, 156, 109);;
-    font-weight:lighter;
+
+.metricCard {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;         /* card fills its grid cell */
 }
+
+.metricCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+
+.metricIcon {
+  font-size: 2.4rem;
+  color: rgb(109, 156, 109);
+  margin-bottom: 0.75rem;
+}
+
+.number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0.25rem 0;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #666;
+}
+
 
 
 

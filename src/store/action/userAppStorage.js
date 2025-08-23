@@ -254,68 +254,6 @@ export const login = (data) => {
   }
 }
 
-/*
-export const verifiedEmail = (data) => {
-  return async (dispatch, getState) => {
-    try {
-      const response = await fetch(`https://metrobss-backend.onrender.com/emailverify`, {
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data)
-      })
-      if (response.status === 404) {
-        let data = await response.json()
-        return {
-          bool: false,
-          message: data.response
-        }
-      }
-      if (response.status === 300) {
-        let data = await response.json()
-        return {
-          bool: false,
-          message: data.response
-        }
-      }
-      if (response.status === 200) {
-        
-        let data = await response.json()
-        //save to async storage and reducer store
-
-        localStorage.setItem("user", JSON.stringify(data.user))
-
-        localStorage.setItem("user_token", JSON.stringify(data.userToken))
-
-        localStorage.setItem("user_expiry", JSON.stringify(data.userExpiresIn))
-
-        let payloadData = {
-          user:data.user,
-          userToken:data.userToken,
-          userExpiresIn:data.userExpiresIn
-
-        }
-
-
-        dispatch({ type: LOGIN_USER, payload: payloadData })
-
-        return {
-          bool: true,
-          message: data.response
-        }
-      }
-    } catch (err) {
-
-      return {
-        bool: false,
-        message: "network error"
-      }
-    }
-  }
-}
-*/
-
-//https://metrobss-backend.onrender.com.com
 
 //this one is the email verification page after signin up
 export const checkverification = (email) => {

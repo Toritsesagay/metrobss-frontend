@@ -13,6 +13,7 @@ import Loader from '../components/loader';
 import Cards from 'react-credit-cards-2';
 import 'react-credit-cards-2/dist/es/styles-compiled.css'
 
+import { FaExchangeAlt, FaCreditCard, FaUniversity } from "react-icons/fa";
 
 function Dashboard() {
     let [isError, setIsError] = useState(false)
@@ -214,15 +215,18 @@ function Dashboard() {
 
 
 
-                        {cards.length > 0 && cards.map(data=><div key={data._id}>
+                        {cards.length > 0 && cards.map(data => <div key={data._id}>
                             <div className={styles.cardContainer}>
-                                <Cards
-                                    number={data.cardNumber}
-                                    expiry={data.expiry}
-                                    cvc={data.cvv}
-                                    name={`${user.firstName} ${user.lastName}`}
-                                    className={styles.card}
-                                />
+                                <div style={{ textAlign: "left" }}>
+                                    <Cards
+                                        number={data.cardNumber}
+                                        expiry={data.expiry}
+                                        cvc={data.cvv}
+                                        name={`${user.firstName} ${user.lastName}`}
+                                    />
+                                </div>
+
+
                             </div>
 
                             <div className={styles.inputContainer}>
@@ -239,30 +243,26 @@ function Dashboard() {
 
 
 
+<div className={styles.metricsContainer}>
+  <div className={styles.metricCard} onClick={() => menuHandler("transaction-history")}>
+    <FaExchangeAlt className={styles.metricIcon} />
+    <p className={styles.number}>{histories.length}</p>
+    <h5 className={styles.title}>Transactions</h5>
+  </div>
 
-                        <div className={styles.metricsContainer}>
-                            <div className={styles.metrics} onClick={() => menuHandler('transaction-history')}>
-                                <h5 className={styles.title}>Transactions</h5>
-                                <p className={styles.number}>{histories.length}</p>
-                            </div>
+  <div className={styles.metricCard} onClick={() => menuHandler("card")}>
+    <FaCreditCard className={styles.metricIcon} />
+    <p className={styles.number}>{cards.length}</p>
+    <h5 className={styles.title}>Cards</h5>
+  </div>
 
+  <div className={styles.metricCard} onClick={() => menuHandler("loan")}>
+    <FaUniversity className={styles.metricIcon} />
+    <p className={styles.number}>{loans.length}</p>
+    <h5 className={styles.title}>Loans</h5>
+  </div>
+</div>
 
-
-
-                            <div className={styles.metrics} onClick={() => menuHandler('card')}>
-                                <h5 className={styles.title}>Cards</h5>
-                                <p className={styles.number}>{cards.length}</p>
-                            </div>
-
-                            <div className={styles.metrics} onClick={() => menuHandler('loan')}>
-                                <h5 className={styles.title} >Loans</h5>
-                                <p className={styles.number}>{loans.length}</p>
-                            </div>
-
-
-
-
-                        </div>
 
 
 
@@ -303,7 +303,7 @@ function Dashboard() {
 
                             <div className={styles.body}>
 
-                                <table style={{ width: '600px' }}>
+                                <table>
                                     <thead>
                                         <tr>
                                             <th style={{ fontWeight: '300' }}>
@@ -369,10 +369,10 @@ function Dashboard() {
 
                             </div>
 
+
+
+
                         </div>
-
-
-
 
 
 

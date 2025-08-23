@@ -8,8 +8,7 @@ const SubmitBtn = (props) => {
             margin: 'auto',
             display: 'inline',
             fontSize: '1.2rem',
-            paddingTop: '9px',
-            paddingBottom: '9px',
+            padding: '7px',
 
         }}>{props.text}</p>
     </button>

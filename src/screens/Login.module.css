@@ -280,12 +280,10 @@
 
 
 /* submit section */
-
 .submit input{
     width: 100%;
     background-color: rgb(109, 156, 109);
     border: none;
-    height:48px;
     border-radius: 20px;
 
 }
