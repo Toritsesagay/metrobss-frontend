@@ -373,7 +373,7 @@
 
 
 table {
-  width: 700px;
+  width: 600px;
   border-collapse: collapse; /* optional */
   table-layout: fixed;       /* equal spacing */
 }
