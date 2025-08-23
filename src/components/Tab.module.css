@@ -1,5 +1,5 @@
 .tabContainer {
-  bottom: 20px;
+  bottom: 5px;
   display:none;
   justify-content: space-around;
   align-items: center;
@@ -64,6 +64,7 @@
 @media screen and (max-width: 480px) {
   .tabContainer{
     display:flex;
+    position:fixed;
   }
 
 }

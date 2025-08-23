@@ -319,7 +319,7 @@ function Dashboard() {
                       </tr>
                     </thead>
                    <tbody>
-  {isDeposits && isDeposits.slice(0, 4).map(data => (
+  {isDeposits && isDeposits.slice(0, 1).map(data => (
     <tr key={data._id || `${data.date}-${data.amount}`}>
       <td>
         <span
