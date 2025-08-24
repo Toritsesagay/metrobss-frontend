@@ -1,6 +1,6 @@
 {
   "short_name": "MetroBSS",
-  "name": "MetroBSS - Smart Banking Solution",
+  "name": "MetroBSS ",
   "description": "Your comprehensive banking solution for the modern world",
   "icons": [
     {
@@ -53,7 +53,7 @@
   "display": "standalone",
   "orientation": "portrait-primary",
   "theme_color": "#2563eb",
-  "background_color": "#ffffff",
+  "background_color": "#e84351",
   "categories": ["finance", "business", "banking"],
   "lang": "en",
   "dir": "ltr",

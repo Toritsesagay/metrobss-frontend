@@ -4,11 +4,13 @@ import { PieChart } from 'react-minimal-pie-chart'
 import WalletCard from './WalletCard';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { useCurrency } from '../hooks/useCurrency';
 
 
 function Wallet() {
     let { user} = useSelector(state => state.userAuth)
     let navigate = useNavigate()
+    const { formatBalance } = useCurrency();
   
 
 
@@ -49,7 +51,7 @@ function Wallet() {
                     <div className={styles.balance}>
                         <h4>Hello!</h4>
                         <p> {user.firstName}</p>
-                        <p>Balance: <span>${user.walletBalance}</span></p>
+                        <p>Balance: <span>{formatBalance(user.walletBalance)}</span></p>
                     </div>
 
                     <div className={styles.balanceChart}>

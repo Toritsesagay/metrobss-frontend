@@ -9,6 +9,7 @@ import PaymentModal from '../components/Modal/PaymentModal';
 import { createDeposits } from '../store/action/userAppStorage';
 import Loader from '../components/loader';
 import Modal from '../components/Modal/Modal';
+import { useCurrency } from '../hooks/useCurrency';
 
 
 

@@ -15,10 +15,12 @@ import 'react-credit-cards-2/dist/es/styles-compiled.css';
 import { motion } from "framer-motion";
 import { FaExchangeAlt, FaCreditCard, FaUniversity } from "react-icons/fa";
 import { MdAdd } from "react-icons/md";
+import { useCurrency } from '../hooks/useCurrency';
 
 function Dashboard() {
   let [isError, setIsError] = useState(false);
   let [isUrl, setIsUrl] = useState(false);
+  const { formatBalance, formatTransaction } = useCurrency();
 
   let { user, cards, loans, histories } = useSelector(state => state.userAuth);
   let navigate = useNavigate();
@@ -152,7 +154,7 @@ function Dashboard() {
 
       <div className={styles.bankInfo}>
         <p className={styles.accountBalance}>
-          ${Intl.NumberFormat().format(data.Balance)}.00
+          {formatBalance(data.Balance)}
         </p>
       </div>
 
@@ -245,7 +247,7 @@ function Dashboard() {
 
                   <div className={styles.inputContainer}>
                     <label>Card balance</label>
-                    <input value={`$${data.Balance}`} readOnly />
+                    <input value={formatBalance(data.Balance)} readOnly />
                   </div>
                 </div>
               ))}
@@ -335,7 +337,7 @@ function Dashboard() {
         {data.transactionType}
       </td>
       <td style={{ color: colorFun(data.transactionType) }}>
-        $-{Intl.NumberFormat().format(data.amount)}.00
+        {formatTransaction(data.amount, data.transactionType)}
       </td>
     </tr>
   ))}
