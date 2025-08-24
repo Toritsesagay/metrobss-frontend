@@ -142,32 +142,41 @@ function Dashboard() {
                 GOOD {day()}, {user.firstName}!
               </motion.h2>
 
-              {isAccount.map(data => (
-                <div className={styles.chartSection} key={data.accountNumber}>
-                  <div className={styles.bankInfoCon}>
-                    <div className={styles.bankInfo} style={{ display: 'flex' }}>
-                      <p className={styles.accountType}>{data.accountType}.........</p>
-                      <p className={styles.accountType}>{data.accountNumber}</p>
-                    </div>
+              {isAccount.map((data, index) => (
+  <div className={styles.chartSection} key={data.accountNumber}>
+    <div className={styles.bankInfoCon}>
+      <div className={styles.bankInfo} style={{ display: 'flex' }}>
+        <p className={styles.accountType}>{data.accountType}.........</p>
+        <p className={styles.accountType}>{data.accountNumber}</p>
+      </div>
 
-                    <div className={styles.bankInfo}>
-                      <p className={styles.accountBalance}>
-                        ${Intl.NumberFormat().format(data.Balance)}.00
-                      </p>
-                    </div>
+      <div className={styles.bankInfo}>
+        <p className={styles.accountBalance}>
+          ${Intl.NumberFormat().format(data.Balance)}.00
+        </p>
+      </div>
 
-                    {/* Action Buttons */}
-                    <div className={styles.actionButtons}>
-                      <button className={`${styles.cardButton} ${styles.primaryBtn}`} onClick={navigateDeposit}>
-                        Deposit
-                      </button>
-                      <button className={`${styles.cardButton} ${styles.secondaryBtn}`} onClick={navigateTransfer}>
-                        Transfer
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              ))}
+      {/* Action Buttons - show only for first account */}
+      {index === 0 && (
+        <div className={styles.actionButtons}>
+          <button
+            className={`${styles.cardButton} ${styles.primaryBtn}`}
+            onClick={navigateDeposit}
+          >
+            Deposit
+          </button>
+          <button
+            className={`${styles.cardButton} ${styles.secondaryBtn}`}
+            onClick={navigateTransfer} style={{color:'red'}}
+          >
+            Transfer
+          </button>
+        </div>
+      )}
+    </div>
+  </div>
+))}
+
 
               {/* Floating draggable Add Account Button (Framer Motion drag) */}
               <motion.div

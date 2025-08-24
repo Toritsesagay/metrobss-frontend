@@ -334,12 +334,12 @@
 
 .secondaryBtn {
   background: white;
-  color: rgb(109, 156, 109);
-  border: .7px solid rgb(109, 156, 109);
+  color: rgb(159, 159, 159);
+  border: .7px solid rgb(169, 169, 169);
 }
 
 .secondaryBtn:hover {
-  background: rgba(109, 156, 109, 0.1);
+  background: rgba(150, 150, 150, 0.1);
   transform: translateY(-2px);
 }
 
