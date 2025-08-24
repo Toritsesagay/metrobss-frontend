@@ -23,7 +23,7 @@ input:-webkit-autofill:active{
 
 
 .loaders {
-  background-color: rgb(235, 255, 235);
+  background-color: rgb(255, 235, 235);
   width:130px;
   height:130px;
   border-radius:120%;
@@ -37,7 +37,7 @@ input:-webkit-autofill:active{
 .loader-inner{
   width:90px;
   height:90px;
-  background-color: rgb(220, 255, 220);
+  background-color: rgb(255, 220, 220);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +47,7 @@ input:-webkit-autofill:active{
 .loader-inner-inner{
   width:60px;
   height:60px;
-  background-color: rgb(109, 156, 109);
+  background-color: #e84351;
   display: flex;
   justify-content: center;
   align-items: center;

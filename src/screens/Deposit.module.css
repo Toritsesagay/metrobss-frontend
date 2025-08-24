@@ -34,7 +34,7 @@
 
 .header{
     width:100%;
-    background-color: rgb(109, 156, 109);
+    background-color: #e84351;
     display: flex;
     padding: 10px;
     align-items: center;
@@ -92,7 +92,7 @@ table td{
 
 .pay{
     width:60px;
-    color: rgb(109, 156, 109);
+    color: #e84351;
     cursor: pointer;
     font-weight: 600;
 }
@@ -164,7 +164,7 @@ table td{
 }
 
 .form button{
-    background-color: rgb(109, 156, 109);
+    background-color: #e84351;
     color: #fff;
     font-size: 1rem;
     font-family: ABeeZee;

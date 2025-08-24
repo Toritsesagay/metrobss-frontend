@@ -88,7 +88,7 @@
 .passportheading{
     text-align: center;
     height:40px;
-    background-color: rgb(109, 156, 109);
+    background-color: #e84351;
     padding-top: 5px;
     padding-bottom: 5px;
     margin-bottom: 30px;
@@ -172,7 +172,7 @@
 
 
 .screenContainer .rightContainer .rightformcontainer .alternative span {
-    color: rgb(109, 156, 109);
+    color: #e84351;
     cursor: pointer;
 }
 
@@ -258,7 +258,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-color: rgb(109, 156, 109);
+    background-color: #e84351;
     margin-bottom: 60px;
 }
 
@@ -282,7 +282,7 @@
 /* submit section */
 .submit input{
     width: 100%;
-    background-color: rgb(109, 156, 109);
+    background-color: #e84351;
     border: none;
     border-radius: 20px;
 

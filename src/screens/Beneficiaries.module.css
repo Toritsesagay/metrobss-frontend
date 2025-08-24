@@ -34,7 +34,7 @@
 .add{
     position: fixed;
     padding: 15px;
-    background-color: rgb(109, 156, 109);
+    background-color: #e84351;
     bottom:5%;
     right:32%;
     border-radius: 15%;
@@ -117,13 +117,13 @@
 
 .priceContainer p{
     font-size: 1.1rem;
-    color:rgb(109, 156, 109);
+    color:#e84351;
     font-weight: 600;
 }
 
 .priceContainer span{
     font-size: 1.3rem;
-    color:rgb(109, 156, 109);
+    color:#e84351;
     border-radius: 100%;
     
 }

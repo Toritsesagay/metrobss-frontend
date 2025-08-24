@@ -52,7 +52,7 @@
 }
 
 .creditCard,.yellowcreditCard {
-    background-color: rgb(109, 156, 109);;
+    background-color: #e84351;;
     border-radius: 10px;
     padding: 5px;
     z-index: 1;
@@ -187,7 +187,7 @@
 .chartBarMiddle {
     width: 100%;
     
-    background-color:   rgb(109, 156, 109);
+    background-color:   #e84351;
 }
 
 
@@ -222,7 +222,7 @@
     width: 20px;
     height: 20px;
     border-radius: 100%;
-    background-color: rgb(109, 156, 109);
+    background-color: #e84351;
     display: inline-block;
     margin-right: 1px;
 }
@@ -293,7 +293,7 @@
 }
 
 .recentAmount span {
-    background-color: rgb(109, 156, 109);
+    background-color: #e84351;
 
 }
 

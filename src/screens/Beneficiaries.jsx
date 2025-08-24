@@ -117,7 +117,7 @@ function Beneficiaries() {
 
                             </button>
 
-                            <button onClick={otherBankHandler} style={{ backgroundColor: isMyBank ? ' rgb(241, 255, 241)' : 'rgb(109, 156, 109)', color: isMyBank ? 'rgb(109, 156, 109)' : '#fff' }}>
+                            <button onClick={otherBankHandler} style={{ backgroundColor: isMyBank ? ' rgb(241, 241, 241)' : '#e84351', color: isMyBank ? '#e84351' : '#fff' }}>
                                 Other Bank
                             </button>
 

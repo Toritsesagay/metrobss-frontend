@@ -87,7 +87,7 @@
 }
 
 .form button {
-    background-color: rgb(109, 156, 109);
+    background-color: #e84351;
     color: #fff;
     font-size: 1rem;
     font-family: ABeeZee;
@@ -128,7 +128,7 @@
 
 .header {
     width: 100%;
-    background-color: rgb(109, 156, 109);
+    background-color: #e84351;
     display: flex;
     padding: 10px;
     align-items: center;
@@ -165,7 +165,7 @@
 
 .question {
     text-align: center;
-    color: rgb(109, 156, 109);
+    color: #e84351;
     font-size: 1.2rem;
     font-weight: 600;
     color: #000000;
@@ -193,7 +193,7 @@
 }
 
 .creditCard {
-    background-color: rgb(109, 156, 109);
+    background-color: #e84351;
     border-radius: 10px;
     padding: 5px;
     z-index: 1;
@@ -267,7 +267,7 @@
 
 .paginate{
     text-align: center;
-    color:rgb(109, 156, 109);
+    color:#e84351;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;

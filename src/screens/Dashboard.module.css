@@ -105,15 +105,15 @@
 }
 
 .recentAmount span {
-    background-color: rgb(109, 156, 109);
+    background-color: #e84351;
 
 }
 
 .recentRecharge span,
 .recentSend span,
 .recentPay span {
-    background-color: rgb(221, 255, 221);
-    color: rgb(85, 147, 85);
+    background-color: rgb(255, 221, 221);
+    color: #e84351;
 
 }
 
@@ -152,7 +152,7 @@
 .customCardWrapper .rccs {
   border-radius: 20px !important;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2) !important;
-  background: linear-gradient(135deg, #6d9c6d, #598859) !important;
+  background: linear-gradient(135deg, #e84351, #d23742) !important;
 }
 
 .customCardWrapper .rccs__number, 
@@ -178,9 +178,9 @@
 .sectionTitle {
   font-size: 1.2rem;
   font-weight: 600;
-  color: rgb(109, 156, 109);
+  color: #e84351;
   margin-bottom: 1rem;
-  border-bottom: 2px solid rgba(109, 156, 109, 0.2);
+  border-bottom: 2px solid rgba(232, 67, 81, 0.2);
   padding-bottom: 0.5rem;
 }
 
@@ -192,7 +192,7 @@
 .imgWrapper {
   border-radius: 12px;
   overflow: hidden;
-  border: 3px solid rgba(109, 156, 109, 0.2);
+  border: 3px solid rgba(232, 67, 81, 0.2);
   width:210px;
   box-shadow: 0 6px 16px rgba(0,0,0,0.1);
   overflow-x:scroll;
@@ -233,8 +233,8 @@
 }
 
 .active {
-  background: rgba(109, 156, 109, 0.15);
-  color: rgb(109, 156, 109);
+  background: rgba(232, 67, 81, 0.15);
+  color: #e84351;
 }
 
 .inactive {
@@ -244,7 +244,7 @@
 
 
 .bankName h3 {
-    color: rgb(109, 156, 109);
+    color: #e84351;
     margin-bottom: 30px;
     font-size: 1.4rem;
 }
@@ -283,15 +283,15 @@
   font-weight: 700;
   background: linear-gradient(
     90deg,
-    rgb(109, 156, 109),     /* Brand Green */
-    rgb(80, 120, 80),       /* Deeper Green */
-    rgb(170, 210, 170)      /* Softer Mint */
+    #e84351,     /* Brand Green */
+    rgb(200, 80, 80),       /* Deeper Red */
+    rgb(210, 170, 170)      /* Softer Pink */
   );
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   white-space: nowrap;
-  border-right: 3px solid rgba(109, 156, 109, 0.75); /* Cursor */
+  border-right: 3px solid rgba(232, 67, 81, 0.75); /* Cursor */
   animation: blinkCursor 0.7s steps(1) infinite;
   overflow: hidden;
 }
@@ -321,15 +321,15 @@
 }
 
 .primaryBtn {
-  background: rgb(109, 156, 109);
+  background: #e84351;
   color: white;
-  box-shadow: 0 4px 10px rgba(109, 156, 109, 0.3);
+  box-shadow: 0 4px 10px rgba(232, 67, 81, 0.3);
 }
 
 .primaryBtn:hover {
-  background: rgba(109, 156, 109, 0.9);
+  background: rgba(232, 67, 81, 0.9);
   transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(109, 156, 109, 0.4);
+  box-shadow: 0 6px 14px rgba(232, 67, 81, 0.4);
 }
 
 .secondaryBtn {
@@ -362,7 +362,7 @@
     color: rgb(81, 81, 81);
     font-size: 1.6rem;
     font-family: ABeeZee;
-    color:rgb(109, 156, 109);
+    color:#e84351;
     font-weight: 700;
     margin: 0px;
 }
@@ -408,7 +408,7 @@
 
 .passportContainer h4{
     font-weight: 300;
-    color: rgb(109, 156, 109);
+    color: #e84351;
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 30px;
@@ -438,7 +438,7 @@
 
 .summary h4{
     font-weight: 300;
-    color: rgb(109, 156, 109);
+    color: #e84351;
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 30px;
@@ -487,7 +487,7 @@
 }
 
 .summarySection h6 {
-    color: rgb(109, 156, 109);
+    color: #e84351;
     margin-bottom: 30px;
     font-size: 1.3rem;
 
@@ -525,7 +525,7 @@
 .block{
     width:6px;
     height:18px;
-    background-color:  rgb(109, 156, 109);
+    background-color:  #e84351;
     display: inline-block;
     margin-right: 5px;
     color:rgb(153, 160, 153);
@@ -543,7 +543,7 @@
 
 .header {
     width: 100%;
-    /*background-color: rgb(109, 156, 109);*/
+    /*background-color: #e84351;*/
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -641,7 +641,7 @@ table td {
 
 .pay {
     width: 60px;
-    color: rgb(109, 156, 109);
+    color: #e84351;
     cursor: pointer;
     font-weight: 600;
 }
@@ -701,7 +701,7 @@ table td {
 
 .metricIcon {
   font-size: 1.5rem;
-  color: rgb(109, 156, 109);
+  color: #e84351;
   margin-bottom: 0.75rem;
 }
 

@@ -19,8 +19,8 @@ function Wallet() {
                 icon: 'sync',
                 name: 'Upcoming',
                 price: '0.00',
-                color: 'rgb(75, 187, 75)',
-                backgroundColor: 'rgb(241, 255, 241)'
+                color: '#e84351',
+                backgroundColor: 'rgb(255, 241, 241)'
             },
             {
                 icon: 'arrow_upward',
@@ -63,7 +63,7 @@ function Wallet() {
                             data={[
                                 {
                                     value: 15,
-                                    color: 'rgb(52, 134, 52)',
+                    color: '#e84351',
                                     style: {
                                         strokeWidth: 9,
                                         lineWidth: '10%'

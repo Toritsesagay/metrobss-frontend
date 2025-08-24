@@ -100,7 +100,7 @@ function Dashboard() {
     if (data === 'Transfer') return 'red';
     if (data === 'Debit') return 'red';
     if (data === 'withdraw') return 'red';
-    return 'green';
+    return '#e84351';
   };
 
 
@@ -196,7 +196,7 @@ function Dashboard() {
   <motion.button
     onClick={clickHandler}
     style={{
-      background: "linear-gradient(135deg, rgb(109,156,109), rgb(89,136,89))",
+    background: "linear-gradient(135deg, #e84351, #d23742)",
       color: "white",
       border: "none",
       padding: "15px 22px",
@@ -325,7 +325,7 @@ function Dashboard() {
       <td>
         <span
           className={styles.bullet}
-          style={{ backgroundColor: data.status === 'active' ? 'rgb(76, 149, 76)' : 'rgb(179, 179, 179)' }}
+          style={{ backgroundColor: data.status === 'active' ? '#e84351' : 'rgb(179, 179, 179)' }}
         />
         {data.status === 'active' ? 'Complete' : 'Pending'}
       </td>

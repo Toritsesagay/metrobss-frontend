@@ -28,7 +28,7 @@
 
 
 .favoriteCard  .headsection{
-    background-color: rgb(109, 156, 109);
+    background-color: #e84351;
     color: #fff;
     padding: 5px;
     font-size: 1.1rem;
@@ -114,7 +114,7 @@
     font-size: 1rem;
     color:#fff;
     padding:5px;
-    background-color: rgb(109, 156, 109);
+    background-color: #e84351;
     border-radius: 100%;
  }
 

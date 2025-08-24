@@ -44,7 +44,7 @@
 
 .header{
     width:100%;
-    background-color: rgb(109, 156, 109);
+    background-color: #e84351;
     display: flex;
     padding: 10px;
     align-items: center;
@@ -89,7 +89,7 @@
 }
 
 .form .headsection{
-    background-color: rgb(109, 156, 109);
+    background-color: #e84351;
     color: #fff;
     padding-top: 12px;
     padding-bottom: 12px;

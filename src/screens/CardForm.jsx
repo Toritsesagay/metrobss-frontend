@@ -239,7 +239,7 @@ function CardForm() {
                                     e.preventDefault()
                                     detailHandler(card._id)
                                 }}
-                                    style={{ backgroundColor: 'rgb(241, 255, 241)', color: 'rgb(109, 156, 109)' }}>Card details</button>
+                                    style={{ backgroundColor: 'rgb(241, 241, 241)', color: '#e84351' }}>Card details</button>
 
                                 <button onClick={(e) => {
                                     e.preventDefault()

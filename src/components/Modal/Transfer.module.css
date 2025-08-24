@@ -29,7 +29,7 @@
 
 
 .favoriteCard  .headsection{
-    background-color: rgb(109, 156, 109);
+    background-color: #e84351;
     color: #fff;
     padding: 5px;
     font-size: 1.1rem;
@@ -71,7 +71,7 @@ div.body p{
     margin-bottom: 20px;
     padding-top: 12px;
     padding-bottom: 12px;
-    background-color: rgb(109, 156, 109);
+    background-color: #e84351;
     font-size: .9rem;
 }
 
@@ -84,8 +84,8 @@ div.body p{
 } 
 
 .transferbutton:nth-of-type(1){
-    background-color: rgb(241, 255, 241);
-    color:rgb(109, 156, 109);
+    background-color: rgb(255, 241, 241);
+    color:#e84351;
 }
 
 

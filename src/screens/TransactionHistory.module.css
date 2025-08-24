@@ -54,7 +54,7 @@
 .block{
     width:6px;
     height:18px;
-    background-color:  rgb(109, 156, 109);
+    background-color:  #e84351;
     display: inline-block;
     margin-right: 5px;
 }
@@ -71,7 +71,7 @@
 
 .header {
     width: 100%;
-    /*background-color: rgb(109, 156, 109);*/
+    /*background-color: #e84351;*/
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -211,13 +211,13 @@ table td {
 
 .priceContainer p{
     font-size: 1.1rem;
-    color:rgb(109, 156, 109);
+    color:#e84351;
     font-weight: 600;
 }
 
 .priceContainer span{
     font-size: 1.1rem;
-    background-color:rgb(109, 156, 109);
+    background-color:#e84351;
     color:#fff;
     padding:3px;
     border-radius: 100%;
