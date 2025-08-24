@@ -1,7 +1,8 @@
 {
-  "name": "mobilebank_frontend",
-  "version": "0.1.0",
+  "name": "metrobss",
+  "version": "1.0.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@react-pdf/renderer": "^3.1.14",
     "@testing-library/jest-dom": "^5.17.0",
@@ -36,8 +37,14 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:pwa": "npm run build && npm run optimize:images",
+    "optimize:images": "echo 'Optimize your PWA icons manually using the SVG template in public/icons/'",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test:pwa": "npm test && npm run lighthouse",
+    "lighthouse": "echo 'Run: npx lighthouse http://localhost:3000 --view --preset=pwa'",
+    "eject": "react-scripts eject",
+    "serve": "npx serve -s build -p 3000",
+    "pwa:validate": "echo 'PWA validation - check manifest, service worker, and icons are properly configured'"
   },
   "eslintConfig": {
     "extends": [

@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import FallBack from './components/Fallback';
+import OfflineNotification from './components/OfflineNotification';
 import { useSelector } from "react-redux";
 
 
@@ -65,6 +66,7 @@ function App() {
 
   return (
     <div className = "App">
+      <OfflineNotification />
       <Suspense fallback={<FallBack />} >
         <Routes>
           {/* General*/}
