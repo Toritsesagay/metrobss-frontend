@@ -214,7 +214,7 @@ function Dashboard() {
     }}
   >
     <MdAdd size={22} />
-    new account
+    
   </motion.button>
 </motion.div>
 
@@ -260,14 +260,6 @@ function Dashboard() {
                   <h5 className={styles.title}>Cards</h5>
                 </div>
 
-                <div
-                  className={styles.metricCard}
-                  onClick={() => menuHandler("loan")}
-                >
-                  <FaUniversity className={styles.metricIcon} />
-                  <p className={styles.number}>{loans.length}</p>
-                  <h5 className={styles.title}>Loans</h5>
-                </div>
               </div>
 
               <div className={styles.summaryContainer}>

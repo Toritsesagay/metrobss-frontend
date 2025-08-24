@@ -127,16 +127,16 @@
     padding: 10px;
     width: 100%;
     border-radius: 15px;
+    padding-bottom:30px
 }
 
 .summaryContainer {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 2rem;
-  padding: 2rem;
+  padding: .5rem;
   background: #fff;
   border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
   align-items: start;
   transition: all 0.3s ease-in-out;
 }
@@ -186,15 +186,16 @@
 
 .passportContainer {
   text-align: center;
+
 }
 
 .imgWrapper {
   border-radius: 12px;
   overflow: hidden;
   border: 3px solid rgba(109, 156, 109, 0.2);
-  width:100%;
-  margin: 0 auto;
+  width:210px;
   box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  overflow-x:scroll;
 }
 
 .img {
@@ -226,7 +227,7 @@
 
 .status {
   font-weight: 600;
-  padding: 0.3rem 0.8rem;
+  padding:.5rem 1rem;
   border-radius: 12px;
   font-size: 0.85rem;
 }
@@ -314,7 +315,7 @@
   border: none;
   border-radius: 20px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 300;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -334,7 +335,7 @@
 .secondaryBtn {
   background: white;
   color: rgb(109, 156, 109);
-  border: 1px solid rgb(109, 156, 109);
+  border: .7px solid rgb(109, 156, 109);
 }
 
 .secondaryBtn:hover {
@@ -554,14 +555,12 @@
 .header h4 {
     font-size: 1.3rem;
     color:rgb(110, 110, 110);
-    
 }
 
 
 
 .body {
     overflow-x: scroll;
-    
 }
 
 

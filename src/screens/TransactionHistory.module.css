@@ -18,13 +18,14 @@
 .mainscreen {
     display: flex;
     flex-direction: column;
-    padding-left: 30px;
+    padding-left: 10px;
     align-items: flex-start;
 }
 
 .mainscreenleft {
     width: 60%;
     margin-bottom: 50px;
+
 }
 
 
@@ -94,6 +95,7 @@
 
 table {
     width:600px;
+    
 }
 
 table tr {
@@ -107,7 +109,7 @@ table tr:hover {
 
 
 
-th, td { border-bottom: 10px solid rgb(246, 246, 246);padding: 5px;margin: 5px;height:65px }
+th, td { border-bottom: 10px solid rgb(246, 246, 246);padding: 10px;margin: 5px;height:65px }
 
 
 table th {
@@ -243,7 +245,7 @@ table td {
     }
 
     .mainscreenleft {
-        width: 98%;
+        width: 100%;
     }
 
 

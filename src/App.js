@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import FallBackComponent from './components/Fallback';
+import FallBack from './components/Fallback';
 import { useSelector } from "react-redux";
 
 
@@ -51,7 +51,7 @@ const IMF =  React.lazy(() => import("./screens/IMFcode"))
 const COT =  React.lazy(() => import("./screens/COTcode"))
 const BSA =  React.lazy(() => import("./screens/BsaCode"))
 
-
+const Onboard =  React.lazy(() => import("./screens/Onboard"))
 const OTP =  React.lazy(() => import("./screens/OneTimePassword"))
 const Loan =  React.lazy(() => import("./screens/Loan"))
 const CardDetails =  React.lazy(() => import("./screens/CardDetails"))
@@ -65,19 +65,13 @@ function App() {
 
   return (
     <div className = "App">
-      <Suspense fallback={<FallBackComponent />} >
+      <Suspense fallback={<FallBack />} >
         <Routes>
           {/* General*/}
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/cards' element={<Card />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/faq' element={<Faq />} />
-          <Route path='/current' element={<Current />} />
-          <Route path='/savings' element={<Savings />} />
+          <Route path='/' element={<Onboard />} />
         
           {/*auth screens*/}
-          <Route path='/login' element={<Login />} />
+          <Route path='/login' element={<Login/>} />
           <Route path='/signup' element={<Signup />} />
           <Route path='/verify/:id' element={<EmailVerify />} />
           <Route path='/verification/:id' element={<EmailVerifification />} />
