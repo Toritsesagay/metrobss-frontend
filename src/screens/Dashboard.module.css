@@ -2,6 +2,7 @@
     display: flex;
     height: 100vh;
     background-color: rgb(251, 251, 251);
+    padding-bottom: 50px;
 }
 
 /*  end of styling the sidebar */
@@ -326,7 +327,7 @@
 }
 
 .secondaryBtn {
-  background: rgba(161, 161, 161, 0.1);
+  background: rgba(150, 150, 150, 0.3);
   color: rgb(159, 159, 159);
   border: .7px solid rgb(169, 169, 169);
   width:120px

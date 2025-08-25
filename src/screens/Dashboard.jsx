@@ -217,7 +217,7 @@ function Dashboard() {
                   }}
                 >
                   <MdAdd size={22} />
-
+New Account
                 </motion.button>
               </motion.div>
 

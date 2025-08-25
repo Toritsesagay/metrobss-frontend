@@ -67,7 +67,7 @@ function Header({ home, title }) {
 
           {home && (
             <div className={styles.notification} onClick={notificationHandler}>
-              <MdNotifications className={styles.icon} size={35} />
+              <MdNotifications className={styles.icon} size={38} />
               
             </div>
           )}
@@ -76,7 +76,7 @@ function Header({ home, title }) {
             <MdMenu
               className={`${styles.hamburger} ${styles.icon}`}
               onClick={menuHandler}
-              size={32}
+              size={36}
             />
           )}
         </div>

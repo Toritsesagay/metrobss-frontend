@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  height: 65px;
+  height: 70px;
   margin-bottom: 7px;
   position: sticky;
   top: 0;
@@ -143,7 +143,7 @@
 
 @media screen and (max-width: 480px) {
   .innerheaderleft h2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   .innerheaderright {
     gap: 10px;
