@@ -275,3 +275,76 @@ table td{
 
 
 }
+
+.pageTitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.walletGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.walletCard {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.walletCard:hover {
+  transform: translateY(-3px);
+}
+
+.walletCard h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #e84351;
+}
+
+.qrImage {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.walletRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f4f4f4;
+  border-radius: 8px;
+  padding: 8px 12px;
+  overflow: hidden;
+}
+
+.addressText {
+  flex: 1;
+  font-size: 0.9rem;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 10px;
+}
+
+.copyBtn {
+  background: #e84351;
+  border: none;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.copyBtn:hover {
+  background: #d63b47;
+}
