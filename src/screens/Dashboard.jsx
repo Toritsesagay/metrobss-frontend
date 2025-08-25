@@ -88,9 +88,9 @@ function Dashboard() {
   let day = () => {
     var now = new Date(), hour = now.getHours();
     var morning = (hour >= 4 && hour <= 11),
-        afternoon = (hour >= 12 && hour <= 16),
-        evening = (hour >= 17 && hour <= 20),
-        night = (hour >= 21 || hour <= 3);
+      afternoon = (hour >= 12 && hour <= 16),
+      evening = (hour >= 17 && hour <= 20),
+      night = (hour >= 21 || hour <= 3);
 
     if (morning) return 'MORNING';
     if (afternoon) return 'AFTERNOON';
@@ -106,13 +106,13 @@ function Dashboard() {
   };
 
 
-  const navigateDeposit =( )=>{
+  const navigateDeposit = () => {
     navigate('/deposit')
 
   }
 
-   const navigateTransfer =( )=>{
-      navigate('/transfer')
+  const navigateTransfer = () => {
+    navigate('/transfer')
   }
 
 
@@ -135,99 +135,91 @@ function Dashboard() {
           <div className={styles.mainscreen}>
             <div className={styles.mainscreenleft}>
 
-              <motion.h2
+              <h2
                 className={styles.gradientText}
-                initial={{ width: 0 }}
-                animate={{ width: "100%" }}
-                transition={{ duration: 2, ease: "easeInOut" }}
               >
                 GOOD {day()}, {user.firstName}!
-              </motion.h2>
+              </h2>
 
               {isAccount.map((data, index) => (
-  <div className={styles.chartSection} key={data.accountNumber}>
-    <div className={styles.bankInfoCon}>
-      <div className={styles.bankInfo} style={{ display: 'flex' }}>
-        <p className={styles.accountType}>{data.accountType}.........</p>
-        <p className={styles.accountType}>{data.accountNumber}</p>
-      </div>
+                <div className={styles.chartSection} key={data.accountNumber}>
+                  <div className={styles.bankInfoCon}>
+                    <div className={styles.bankInfo} style={{ display: 'flex' }}>
+                      <p className={styles.accountType}>{data.accountType}.........</p>
+                      <p className={styles.accountType}>{data.accountNumber}</p>
+                    </div>
 
-      <div className={styles.bankInfo}>
-        <p className={styles.accountBalance}>
-          {formatBalance(data.Balance)}
-        </p>
-      </div>
+                    <div className={styles.bankInfo}>
+                      <p className={styles.accountBalance}>
+                        {formatBalance(data.Balance)}
+                      </p>
+                    </div>
 
-      {/* Action Buttons - show only for first account */}
-      {index === 0 && (
-        <div className={styles.actionButtons}>
-          <button
-            className={`${styles.cardButton} ${styles.primaryBtn}`}
-            onClick={navigateDeposit}
-          >
-            Deposit
-          </button>
-          <button
-            className={`${styles.cardButton} ${styles.secondaryBtn}`}
-            onClick={navigateTransfer} style={{color:'red'}}
-          >
-            Transfer
-          </button>
-        </div>
-      )}
-    </div>
-  </div>
-))}
+                    {/* Action Buttons - show only for first account */}
+                    {index === 0 && (
+                      <div className={styles.actionButtons}>
+
+                        <button
+                          className={`${styles.cardButton} ${styles.secondaryBtn}`}
+                          onClick={navigateTransfer} style={{ color: 'red' }}
+                        >
+                          Transfer
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
 
 
               {/* Floating draggable Add Account Button (Framer Motion drag) */}
               <motion.div
-  drag
-  dragMomentum={false}
-  dragElastic={0.15}
-  style={{
-    position: "fixed",
-    bottom: 150,
-    right: 30,
-    zIndex: 1000,
-    cursor: "grab",
-  }}
-  whileHover={{ scale: 1.08 }}
-  whileTap={{ scale: 0.95 }}
->
-  <motion.button
-    onClick={clickHandler}
-    style={{
-    background: "linear-gradient(135deg, #e84351, #d23742)",
-      color: "white",
-      border: "none",
-      padding: "15px 22px",
-      borderRadius: "50px",
-      fontSize: "16px",
-      fontWeight: 600,
-      boxShadow: "0 8px 20px rgba(109,156,109,0.4)",
-      display: "flex",
-      alignItems: "center",
-      gap: 10,
-    }}
-    animate={{
-      scale: [1, 1.08, 1], // pulse effect
-      boxShadow: [
-        "0 8px 20px rgba(109,156,109,0.4)",
-        "0 12px 25px rgba(109,156,109,0.6)",
-        "0 8px 20px rgba(109,156,109,0.4)",
-      ],
-    }}
-    transition={{
-      duration: 2,
-      repeat: Infinity,
-      ease: "easeInOut",
-    }}
-  >
-    <MdAdd size={22} />
-    
-  </motion.button>
-</motion.div>
+                drag
+                dragMomentum={false}
+                dragElastic={0.15}
+                style={{
+                  position: "fixed",
+                  bottom: 150,
+                  right: 30,
+                  zIndex: 50,
+                  cursor: "grab",
+                }}
+                whileHover={{ scale: 1.08 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <motion.button
+                  onClick={clickHandler}
+                  style={{
+                    background: "linear-gradient(135deg, #e84351, #d23742)",
+                    color: "white",
+                    border: "none",
+                    padding: "15px 22px",
+                    borderRadius: "50px",
+                    fontSize: "16px",
+                    fontWeight: 600,
+                    boxShadow: "0 8px 20px rgba(109,156,109,0.4)",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 10,
+                  }}
+                  animate={{
+                    scale: [1, 1.08, 1], // pulse effect
+                    boxShadow: [
+                      "0 8px 20px rgba(109,156,109,0.4)",
+                      "0 12px 25px rgba(109,156,109,0.6)",
+                      "0 8px 20px rgba(109,156,109,0.4)",
+                    ],
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
+                >
+                  <MdAdd size={22} />
+
+                </motion.button>
+              </motion.div>
 
 
               {cards.length > 0 && cards.map(data => (
@@ -240,8 +232,8 @@ function Dashboard() {
                         cvc={data.cvv}
                         name={`${user.firstName} ${user.lastName}`}
                       />
-                   
-                   
+
+
                     </div>
                   </div>
 
@@ -274,33 +266,33 @@ function Dashboard() {
               </div>
 
               <div className={styles.summaryContainer}>
-  <div className={styles.passportContainer}>
-    <h4 className={styles.sectionTitle}>Account Passport</h4>
-    <div className={styles.imgWrapper}>
-      <img src={user.passportUrl} className={styles.img} alt="User Passport" />
-    </div>
-  </div>
+                <div className={styles.passportContainer}>
+                  <h4 className={styles.sectionTitle}>Account Passport</h4>
+                  <div className={styles.imgWrapper}>
+                    <img src={user.passportUrl} className={styles.img} alt="User Passport" />
+                  </div>
+                </div>
 
-  <div className={styles.summary}>
-    <h4 className={styles.sectionTitle}>Basic Info</h4>
-    <div className={styles.infoRow}>
-      <span className={styles.label}>Account Name:</span>
-      <span className={styles.value}>{user.firstName} {user.lastName}</span>
-    </div>
-    <div className={styles.infoRow}>
-      <span className={styles.label}>Country:</span>
-      <span className={styles.value}>{user.country}</span>
-    </div>
-    <div className={styles.infoRow}>
-      <span className={styles.label}>Account Status:</span>
-      <span 
-        className={`${styles.status} ${user.accountVerified ? styles.active : styles.inactive}`}
-      >
-        {user.accountVerified ? 'Active' : 'Inactive'}
-      </span>
-    </div>
-  </div>
-</div>
+                <div className={styles.summary}>
+                  <h4 className={styles.sectionTitle}>Basic Info</h4>
+                  <div className={styles.infoRow}>
+                    <span className={styles.label}>Account Name:</span>
+                    <span className={styles.value}>{user.firstName} {user.lastName}</span>
+                  </div>
+                  <div className={styles.infoRow}>
+                    <span className={styles.label}>Country:</span>
+                    <span className={styles.value}>{user.country}</span>
+                  </div>
+                  <div className={styles.infoRow}>
+                    <span className={styles.label}>Account Status:</span>
+                    <span
+                      className={`${styles.status} ${user.accountVerified ? styles.active : styles.inactive}`}
+                    >
+                      {user.accountVerified ? 'Active' : 'Inactive'}
+                    </span>
+                  </div>
+                </div>
+              </div>
 
 
               <div className={styles.helpCard}>
@@ -321,38 +313,38 @@ function Dashboard() {
                         <th style={{ fontWeight: '300' }}>Amount</th>
                       </tr>
                     </thead>
-                   <tbody>
-  {isDeposits && isDeposits.slice(0, 1).map(data => (
-    <tr key={data._id || `${data.date}-${data.amount}`}>
-      <td>
-        <span
-          className={styles.bullet}
-          style={{ backgroundColor: data.status === 'active' ? '#e84351' : 'rgb(179, 179, 179)' }}
-        />
-        {data.status === 'active' ? 'Complete' : 'Pending'}
-      </td>
-      <td>{data.date.substring(0, 10)}</td>
-      <td>{data.reason}</td>
-      <td className={styles.transactionType} style={{ color: colorFun(data.transactionType) }}>
-        {data.transactionType}
-      </td>
-      <td style={{ color: colorFun(data.transactionType) }}>
-        {formatTransaction(data.amount, data.transactionType)}
-      </td>
-    </tr>
-  ))}
-</tbody>
+                    <tbody>
+                      {isDeposits && isDeposits.slice(0, 1).map(data => (
+                        <tr key={data._id || `${data.date}-${data.amount}`}>
+                          <td>
+                            <span
+                              className={styles.bullet}
+                              style={{ backgroundColor: data.status === 'active' ? '#e84351' : 'rgb(179, 179, 179)' }}
+                            />
+                            {data.status === 'active' ? 'Complete' : 'Pending'}
+                          </td>
+                          <td>{data.date.substring(0, 10)}</td>
+                          <td>{data.reason}</td>
+                          <td className={styles.transactionType} style={{ color: colorFun(data.transactionType) }}>
+                            {data.transactionType}
+                          </td>
+                          <td style={{ color: colorFun(data.transactionType) }}>
+                            {formatTransaction(data.amount, data.transactionType)}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
 
-{/* Button to view all */}
-<tfoot>
-  <tr>
-    <td colSpan="5" style={{ textAlign: 'center', padding: '10px' }}>
-      <button className={styles.viewAllBtn} onClick={handleViewAll}>
-        View All Transactions
-      </button>
-    </td>
-  </tr>
-</tfoot>
+                    {/* Button to view all */}
+                    <tfoot>
+                      <tr>
+                        <td colSpan="5" style={{ textAlign: 'center', padding: '10px' }}>
+                          <button className={styles.viewAllBtn} onClick={handleViewAll}>
+                            View All Transactions
+                          </button>
+                        </td>
+                      </tr>
+                    </tfoot>
 
                   </table>
                 </div>
@@ -371,4 +363,6 @@ function Dashboard() {
 }
 
 export default Dashboard;
+
+
 

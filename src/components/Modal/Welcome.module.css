@@ -1,82 +1,67 @@
-
-.favoriteListCard{
-    background-color: rgba(0,0,0,0.2);
-    width:100vw;
-    height:100vh;
-    position: absolute;
-    top:0px;
-    right:0px;
-    left:0px;
-    bottom: 0px;
-    z-index: 60;
-    overflow-y: scroll;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 100px;
-    background-color: rgba(0, 0, 0,0.8);
-    
+.favoriteListCard {
+  background-color: rgba(0,0,0,0.8);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* perfect vertical centering */
 }
 
-.favoriteCard{
-    width:320px;
-    background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;
+.favoriteCard {
+  width: 340px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  overflow: hidden;
 }
 
-
-
-.favoriteCard  .headsection{
-    background-color: #e84351;
-    color: #fff;
-    padding: 5px;
-    font-size: 1.1rem;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.favoriteCard .body {
+  padding: 28px 22px;
+  text-align: center;
 }
 
-.favoriteCard  .headsection h3{
-   
-    font-size: 1.3rem;
+.favoriteCard h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #222;
 }
 
-.favoriteCard div.body{
-    padding: 15px;
-    width: 100%;
-    padding-top: 30px;
-    padding-bottom: 30px;
+.favoriteCard p {
+  color: #4a4a4a;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
-
-div.body p{
-    color: rgb(74, 74, 74);
-    font-size: 1rem;
-    text-align: left;
+.favoriteCard button {
+  background: var(--primary, #e84351); /* keep your brand */
+  color: #fff;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.25s ease;
 }
 
+.favoriteCard button:hover {
+  background: #c73644; /* slightly darker hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
 
+@media screen and (max-width: 480px) {
+  .favoriteCard {
+    width: 90%;
+  }
+}
 
-
- @media screen and (max-width: 480px) {
-    .favoriteCard{
-        width:90%;
-    }
-    
-
-
-
- }
-
- @media screen and (max-width: 300px) {
-    .favoriteCard{
-        width:98%;
-    }
-
-
-
-
- }
+@media screen and (max-width: 300px) {
+  .favoriteCard {
+    width: 95%;
+  }
+}

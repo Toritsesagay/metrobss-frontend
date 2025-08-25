@@ -121,6 +121,8 @@ function App() {
            <Route path='/new-card-form' element={userToken?<NewCardForm/>:<Login/>} />
            <Route path='/card-details/:id' element={userToken?<CardDetails/>:<Login/>} />
 
+           <Route path='/logout' element={userToken?<Dashboard/>:<Login/>} />
+
 
         </Routes>
 
