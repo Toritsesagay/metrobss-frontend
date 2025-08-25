@@ -230,7 +230,7 @@ function SignupPage() {
                             <input type='checkbox' value={isConfirm} onChange={confirmHandler} />
 
 
-                            <p>By creating an acount,You agree to our Terms of service and Privacy Policy </p>
+                            <p className={styles.privacy}>By creating an acount,You agree to our Terms of service and Privacy Policy </p>
 
                         </div>
 

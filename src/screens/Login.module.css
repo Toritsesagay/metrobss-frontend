@@ -1,7 +1,22 @@
-/* styling the screen container */
+/* Full screen container with background image */
 .screenContainer {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+
+    /* Combine fade overlay + image in one background declaration */
+    background: 
+        linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+        url('/public/front/img/main-banner1.jpg') no-repeat center center/cover;
+}
+
+.welcomeText {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color:#e1e1e1
 }
 
 .screenContainer h1 {
@@ -11,68 +26,60 @@
     position: absolute;
 }
 
-
+/* Right container now centers the form vertically */
 .screenContainer .rightContainer {
     width: 55%;
     display: flex;
     justify-content: center;
-    overflow-y: scroll;
-    padding-top: 50px;
-    align-items: flex-start;
-    
-   
+    align-items: center;
+    overflow-y: auto;
+    padding-top: 0;
 }
 
+/* Floating card effect for form container */
 .screenContainer .rightContainer .rightformcontainer {
     width: 55%;
-    padding: 15px;
-    border-radius: 10px;
-    border: 1px solid rgb(224, 224, 224);
+    padding: 30px;
+    border-radius: 15px;
+   
+
+    border: none;
 }
 
-
-.navigate{
+.navigate {
     cursor: pointer;
     display:flex;
     flex-direction: row;
-
 }
 
-.navigate span{
+.navigate span {
     margin-right: 60px;
     margin-top: 5px;
+     color:#fff
 }
-.navigate h2{
+
+.navigate h2 {
     margin: 0px;
     padding: 0px;
     width:70%;
     font-weight: 500;
-    
+    color:#fff
 }
-
-
-
-
-
-
 
 .screenContainer .rightContainer .rightformcontainer h2 {
     font-size: 1.6rem;
     margin-bottom: 30px;
-
 }
 
 .screenContainer .rightContainer .rightformcontainer .inputcontainer {
     margin-bottom: 5px;
     padding: 10px;
-
 }
 
 .screenContainer .rightContainer .rightformcontainer .inputcontainer p {
     margin-bottom: 30px;
     text-align: center;
     font-size: 1rem;
-
 }
 
 .screenContainer .rightContainer .rightformcontainer .inputcontainer h2 {
@@ -80,12 +87,11 @@
     margin-bottom: 2px;
 }
 
-
 .screenContainer .rightContainer .rightformcontainer .formCard {
     margin-bottom: 0px;
 }
 
-.passportheading{
+.passportheading {
     text-align: center;
     height:40px;
     background-color: #5c56b5;
@@ -97,7 +103,7 @@
     border-top-left-radius: 10px;
 }
 
-.imagePreviewContainer{
+.imagePreviewContainer {
     width:100%;
     padding-top:10px;
     padding-bottom: 10px;
@@ -107,7 +113,7 @@
     margin-bottom: 30px;
 }
 
-.imagePreview{
+.imagePreview {
     height:120px;
     width:90%;
     background-color: rgb(236, 236, 236);
@@ -122,7 +128,9 @@
     justify-content: space-around;
 }
 
-.formHorizontalCard .phoneNumberPrefix,.formHorizontalCard .phoneNumber,.formHorizontalCard .numberCard{
+.formHorizontalCard .phoneNumberPrefix,
+.formHorizontalCard .phoneNumber,
+.formHorizontalCard .numberCard {
     width: 15%;
     height:42px;
     border-radius:5px;
@@ -134,17 +142,11 @@
     background-color: rgb(247,247,247);
     margin-bottom: 5px;
     padding-left: 15px;
-    
 }
 
-.formHorizontalCard .phoneNumber{
+.formHorizontalCard .phoneNumber {
     width:73%;
 }
-
-
-
-
-
 
 .screenContainer .rightContainer .rightformcontainer .submit {
     margin-bottom: 20px;
@@ -155,7 +157,6 @@
     font-size: .9rem;
     width: 90%;
     font-weight: 600;
-
 }
 
 .screenContainer .rightContainer .rightformcontainer .terms span {
@@ -167,25 +168,19 @@
     font-size: 1rem;
     width: 90%;
     text-align: center;
+    color:#fff
 }
-
-
 
 .screenContainer .rightContainer .rightformcontainer .alternative span {
     color: #5c56b5;
     cursor: pointer;
+    color:#fff
 }
-
-
-
 
 .screenContainer .rightContainer .rightformcontainer .verifytext {
     font-size: 1.1rem;
     text-align: justify;
 }
-
-
-
 
 .screenContainer .rightContainer .rightformcontainer span {
     font-weight: 500;
@@ -195,30 +190,27 @@
     font-size: 1.1rem;
     color: var(--color-red);
     text-align: center;
-
 }
 
-.termscard{
+.termscard {
     display:flex;
     align-items: center;
-
-
+    
 }
 
-.termscard input{
+.termscard input {
     margin-right:5px;
-    width:20px
+    width:20px;
 }
 
-
-.camerasection{
+.camerasection {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom:60px;
 }
 
-.cameracontainer{
+.cameracontainer {
     width:100px;
     height:100px;
     border-radius: 100px;
@@ -226,12 +218,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
-/*styling the profile container*/
-
-.imageContainer{
+.imageContainer {
     width:200px;
     height:200px;
     border-radius: 300px;
@@ -245,8 +234,7 @@
     overflow: hidden;
 }
 
-
-.sucessContainer{
+.sucessContainer {
     width:120px;
     height:120px;
     border-radius: 300px;
@@ -262,121 +250,84 @@
     margin-bottom: 60px;
 }
 
-.sucessContainer span{
+.sucessContainer span {
     font-size: 2.5rem;
     color: #fff;
 }
 
-
-.imageContainer img{
-    width:100%
+.imageContainer img {
+    width:100%;
 }
 
+.privacy{
+    color:#fff
+}
 
-.imageContainer span{
+.imageContainer span {
     font-size: 7rem;
     color: #dddddd;
 }
 
-
 /* submit section */
-.submit input{
+.submit input {
     width: 100%;
     background-color: #5c56b5;
     border: none;
     border-radius: 20px;
-
 }
-
 
 .submit input::placeholder {
     color:#fff;
     text-align: center;
-  }
-
+}
 
 @media screen and (max-width:1000px) {
     .screenContainer .rightContainer .rightformcontainer {
         width: 70%;
-
-
     }
-
-    
-
 }
 
 @media screen and (max-width:850px) {
-    .screenContainer .rightContainer .rightformcontainer {}
-
     .screenContainer h1 {
         font-size: 2rem;
     }
-
-
-
 }
 
 @media screen and (max-width:800px) {
     .screenContainer .rightContainer .rightformcontainer {
         width: 80%;
     }
-
-
-
-
 }
 
 @media screen and (max-width:650px) {
     .screenContainer h1 {
         font-size: 1.5rem;
-        
     }
-
     .screenContainer .rightContainer {
         padding-top: 0px;
     }
-
-
-
 }
 
-
-
-
-
 @media screen and (max-width: 550px) {
-
     .screenContainer .rightContainer {
         width: 100%;
         border:none;
         padding: 5px;
         padding-top: 30px;
-       
     }
     .screenContainer .rightContainer .rightformcontainer {
         border: none;
         padding: 0px;
         width: 100%;
     }
-
-    .navigate span{
+    .navigate span {
         margin-right: 40px;
         margin-top: 5px;
     }
-
-
-    
-    
 }
-
-
 
 @media screen and (max-width: 291px) {
     .screenContainer .rightContainer .rightformcontainer h2 {
         font-size: 1.5rem;
-
     }
-
-
 }

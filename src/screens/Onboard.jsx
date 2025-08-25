@@ -7,7 +7,7 @@ const Onboard = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigate("/login"); // redirect to login
+      navigate("/welcome"); // redirect to login
     }, 5000);
 
     return () => clearTimeout(timer); // cleanup on unmount

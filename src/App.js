@@ -5,8 +5,10 @@ import FallBack from './components/Fallback';
 import OfflineNotification from './components/OfflineNotification';
 import { useSelector } from "react-redux";
 
-
 const Home = React.lazy(() => import('./screens/Home'))
+
+const LandingPage = React.lazy(() => import('./screens/Welcome'))
+
 const About = React.lazy(() => import('./screens/About'))
 const Card = React.lazy(() => import('./screens/Cards'))
 const Contact = React.lazy(() => import('./screens/Contact'))
@@ -74,6 +76,7 @@ function App() {
         
           {/*auth screens*/}
           <Route path='/login' element={<Login/>} />
+           <Route path='/welcome' element={<LandingPage/>} />
           <Route path='/signup' element={<Signup />} />
           <Route path='/verify/:id' element={<EmailVerify />} />
           <Route path='/verification/:id' element={<EmailVerifification />} />
