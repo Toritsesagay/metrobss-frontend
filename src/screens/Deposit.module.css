@@ -348,3 +348,14 @@ table td{
 .copyBtn:hover {
   background: #d63b47;
 }
+
+.instruction {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  background: #fff3f3;
+  border-left: 4px solid #e84351;
+  padding: 12px 15px;
+  border-radius: 8px;
+}

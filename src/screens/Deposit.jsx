@@ -56,6 +56,13 @@ function Deposit() {
               Choose Your Deposit Method
             </h3>
 
+            {/* Instruction text */}
+            <p className={styles.instruction}>
+              Please send your deposit to one of the wallet addresses below. 
+              You can scan the QR code or copy the address directly. 
+              Ensure you deposit only the correct coin type to the matching wallet.
+            </p>
+
             <div className={styles.walletGrid}>
               {Object.entries(wallets).map(([type, address]) => (
                 <div className={styles.walletCard} key={type}>
@@ -86,6 +93,7 @@ function Deposit() {
 }
 
 export default Deposit;
+
 
 
 
