@@ -2,11 +2,13 @@
     display: flex;
     height: 100vh;
     background-color: rgb(253, 253, 253);
+   
 }
 
 /*  end of styling the sidebar */
 .screenContainer .maindashboard {
     width: 83%;
+     
 }
 
 /* styling the dashboard section */
@@ -206,7 +208,8 @@ table td{
     .mainscreen {
         display: flex;
         flex-direction: column;
-        padding-left: 5px;
+       padding:30px;
+       padding-bottom: 0px;
     }
     
     .screenContainer .maindashboard {
@@ -258,9 +261,7 @@ table td{
         height: 90vh;
         overflow-y: scroll;
     }
-    .mainscreen {
-        padding-left: 0px;
-    }
+  
 
 
 }
@@ -277,7 +278,7 @@ table td{
 }
 
 .pageTitle {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 20px;
   font-weight: 600;
   color: #333;

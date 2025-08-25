@@ -24,8 +24,9 @@ function LandingPage() {
 
     return (
         <>
+          {preloader && <Loader />}
             <div className={styles.screenContainer}>
-                {preloader && <Loader />}
+              
                 {!preloader && (
                     <div className={styles.rightContainer}>
                         <motion.div 

@@ -102,9 +102,9 @@ function LoginPage() {
     
     return (<>
         {isError && <Modal content={isErrorInfo} closeModal={closeModal} />}
-
+{isLoading && <Loader />}
         <div className={styles.screenContainer}>
-        {isLoading && <Loader />}
+        
             <div className={styles.rightContainer}>
              
                 <form className={styles.rightformcontainer} onSubmit={submitHandler}>
