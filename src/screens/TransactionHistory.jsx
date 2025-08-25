@@ -66,12 +66,12 @@ const ReceiptModal = ({ data, onClose, printRef, handlePrint }) => {
             boxShadow: "0px 10px 25px rgba(0,0,0,0.15)",
             fontFamily: "Arial, sans-serif",
             position: "relative",
-          borderTop: "4px solid #e84351", // ✅ brand accent
+          borderTop: "4px solid #5c56b5", // ✅ brand accent
           }}
         >
           {/* Header */}
           <div style={{ textAlign: "center", marginBottom: "20px" }}>
-            <h2 style={{ margin: "0", color: "#e84351" }}>Bank Receipt</h2>
+            <h2 style={{ margin: "0", color: "#5c56b5" }}>Bank Receipt</h2>
             <p style={{ fontSize: "12px", color: "#777" }}>
               {data.date.substring(0, 10)} | {randomTime()}
             </p>
@@ -81,7 +81,7 @@ const ReceiptModal = ({ data, onClose, printRef, handlePrint }) => {
           <div style={{ fontSize: "14px", color: "#333" }}>
             <div style={{ display: "flex", justifyContent: "space-between", margin: "8px 0" }}>
               <span><b>Status:</b></span>
-              <span style={{ color: data.status === "active" ? "#e84351" : "red", fontWeight: 600 }}>
+              <span style={{ color: data.status === "active" ? "#5c56b5" : "red", fontWeight: 600 }}>
                 {data.status === "active" ? "Complete" : "Pending"}
               </span>
             </div>
@@ -95,7 +95,7 @@ const ReceiptModal = ({ data, onClose, printRef, handlePrint }) => {
             </div>
             <div style={{ display: "flex", justifyContent: "space-between", margin: "8px 0" }}>
               <span><b>Amount:</b></span>
-              <span style={{ fontWeight: "bold", color: "#e84351" }}>
+              <span style={{ fontWeight: "bold", color: "#5c56b5" }}>
                 ${Intl.NumberFormat().format(data.amount)}.00
               </span>
             </div>
@@ -124,7 +124,7 @@ const ReceiptModal = ({ data, onClose, printRef, handlePrint }) => {
             <button
               onClick={handlePrint}
               style={{
-                background: "#e84351", // ✅ brand color
+                background: "#5c56b5", // ✅ brand color
                 color: "white",
                 border: "none",
                 padding: "8px 16px",
@@ -202,7 +202,7 @@ function TransactionHistory() {
     if (data === 'Transfer' || data === 'Debit' || data === 'withdraw') {
       return 'red'
     } else {
-      return '#e84351'
+      return '#5c56b5'
     }
   }
 
@@ -242,7 +242,7 @@ function TransactionHistory() {
                             className={styles.bullet}
                             style={{
                               backgroundColor: data.status === 'active'
-                                ? '#e84351'
+                                ? '#5c56b5'
                                 : 'rgb(179, 179, 179)'
                             }}
                           ></span>

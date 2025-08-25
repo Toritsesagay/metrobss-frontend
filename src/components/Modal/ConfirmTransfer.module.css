@@ -31,7 +31,7 @@
 
 
 .favoriteCard  .headsection{
-    background-color: #e84351;
+    background-color: #5c56b5;
     color: #fff;
     padding: 5px;
     font-size: 1.1rem;
@@ -81,7 +81,7 @@
 button{
     width: 100%;
     height:50px;
-    background-color:#e84351;
+    background-color:#5c56b5;
     border:none;
     color:#fff;
     font-size: 1rem;

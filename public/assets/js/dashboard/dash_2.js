@@ -30,7 +30,7 @@ try {
             top: 3,
             left: 1,
             blur: 3,
-            color: '#e84351',
+            color: '#5c56b5',
             opacity: 0.7,
           }
       },
@@ -51,7 +51,7 @@ try {
           left: 0
         }
       },
-      colors: ['#e84351'],
+      colors: ['#5c56b5'],
       tooltip: {
           x: {
               show: false
@@ -288,7 +288,7 @@ try {
     yaxis: {
       min: 0
     },
-    colors: ['#e84351'],
+    colors: ['#5c56b5'],
     tooltip: {
       x: {
         show: false,
@@ -322,7 +322,7 @@ try {
     yaxis: {
       min: 0
     },
-    colors: ['#e84351'],
+    colors: ['#5c56b5'],
     tooltip: {
       x: {
         show: false,

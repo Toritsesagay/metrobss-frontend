@@ -128,7 +128,7 @@ try {
       },
       theme: 'dark'
     },
-    colors: ['#e84351']
+    colors: ['#5c56b5']
   }
 
   
@@ -185,7 +185,7 @@ try {
               }
             },
             customSVG: {
-                SVG: '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="#e84351" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg>',
+                SVG: '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="#5c56b5" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg>',
                 cssClass: undefined,
                 offsetX: -8,
                 offsetY: 5
@@ -194,7 +194,7 @@ try {
         },
       }
     },
-    colors: ['#1b55e2', '#e84351'],
+    colors: ['#1b55e2', '#5c56b5'],
     dataLabels: {
         enabled: false
     },
@@ -368,7 +368,7 @@ try {
             type: 'donut',
             width: 380
         },
-        colors: ['#5c1ac3', '#e2a03f', '#e84351', '#e2a03f'],
+        colors: ['#5c1ac3', '#e2a03f', '#5c56b5', '#e2a03f'],
         dataLabels: {
           enabled: false
         },

@@ -34,7 +34,7 @@
 
 .header {
     width: 100%;
-    background-color: #e84351;
+    background-color: #5c56b5;
     display: flex;
     padding: 10px;
     align-items: center;
@@ -186,7 +186,7 @@ table td {
 }
 
 .form button {
-    background-color: #e84351;
+    background-color: #5c56b5;
     color: #fff;
     font-size: 1rem;
     font-family: ABeeZee;
@@ -229,7 +229,7 @@ styling the summary section
 
 .summary h4{
     font-weight: 300;
-    color: #e84351;
+    color: #5c56b5;
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 30px;

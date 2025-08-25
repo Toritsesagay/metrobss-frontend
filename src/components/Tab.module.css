@@ -33,7 +33,7 @@
 }
 
 .tabItem.active {
-  color: #e84351;
+  color: #5c56b5;
 }
 
 .activeIndicator {
@@ -41,12 +41,12 @@
   bottom: -6px;
   height: 3px;
   width: 24px;
-  background: #e84351;
+  background: #5c56b5;
   border-radius: 2px;
 }
 
 .addButton {
-  background: #e84351;
+  background: #5c56b5;
   color: white;
   border-radius: 50%;
   padding: 12px;

@@ -34,7 +34,7 @@
 
 .header{
     width:100%;
-    background-color: #e84351;
+    background-color: #5c56b5;
     display: flex;
     padding: 10px;
     align-items: center;
@@ -92,7 +92,7 @@ table td{
 
 .pay{
     width:60px;
-    color: #e84351;
+    color: #5c56b5;
     cursor: pointer;
     font-weight: 600;
 }
@@ -164,7 +164,7 @@ table td{
 }
 
 .form button{
-    background-color: #e84351;
+    background-color: #5c56b5;
     color: #fff;
     font-size: 1rem;
     font-family: ABeeZee;
@@ -305,7 +305,7 @@ table td{
 .walletCard h4 {
   font-size: 1.2rem;
   margin-bottom: 15px;
-  color: #e84351;
+  color: #5c56b5;
 }
 
 .qrImage {
@@ -336,7 +336,7 @@ table td{
 }
 
 .copyBtn {
-  background: #e84351;
+  background: #5c56b5;
   border: none;
   color: #fff;
   padding: 6px 10px;
@@ -355,7 +355,7 @@ table td{
   margin-bottom: 25px;
   line-height: 1.5;
   background: #fff3f3;
-  border-left: 4px solid #e84351;
+  border-left: 4px solid #5c56b5;
   padding: 12px 15px;
   border-radius: 8px;
 }

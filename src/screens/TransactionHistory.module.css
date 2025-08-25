@@ -54,7 +54,7 @@
 .block{
     width:6px;
     height:18px;
-    background-color:  #e84351;
+    background-color:  #5c56b5;
     display: inline-block;
     margin-right: 5px;
 }
@@ -71,7 +71,7 @@
 
 .header {
     width: 100%;
-    /*background-color: #e84351;*/
+    /*background-color: #5c56b5;*/
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -211,13 +211,13 @@ table td {
 
 .priceContainer p{
     font-size: 1.1rem;
-    color:#e84351;
+    color:#5c56b5;
     font-weight: 600;
 }
 
 .priceContainer span{
     font-size: 1.1rem;
-    background-color:#e84351;
+    background-color:#5c56b5;
     color:#fff;
     padding:3px;
     border-radius: 100%;

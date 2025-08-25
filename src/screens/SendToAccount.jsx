@@ -355,7 +355,7 @@ function SendToAccont() {
                                 My Bank
                             </button>
 
-                            <button onClick={otherBankHandler} style={{ backgroundColor: isMyBank ? ' rgb(241, 241, 241)' : '#e84351', color: isMyBank ? '#e84351' : '#fff' }}>
+                            <button onClick={otherBankHandler} style={{ backgroundColor: isMyBank ? ' rgb(241, 241, 241)' : '#5c56b5', color: isMyBank ? '#5c56b5' : '#fff' }}>
                                 Other Bank
                             </button>
 

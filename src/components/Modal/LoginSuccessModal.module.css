@@ -105,13 +105,13 @@
 }
 
 .gratitude{
-    border:3px solid #e84351;
+    border:3px solid #5c56b5;
     padding:30px;
     border-radius: 100%;
 }
 
 .gratitude span{
-    color: #e84351;
+    color: #5c56b5;
     font-size: 2rem;
 }
 
@@ -149,7 +149,7 @@
     margin-bottom: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: #e84351;
+    background-color: #5c56b5;
     color: #fff;
     font-size: 1.2rem;
     font-family: ABeeZee;
@@ -285,7 +285,7 @@ button{
     display:flex;
     align-items: center;
     justify-content: center;
-    background-color: #e84351;
+    background-color: #5c56b5;
     border: none;
 }
 

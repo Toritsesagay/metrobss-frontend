@@ -53,7 +53,7 @@
   "display": "standalone",
   "orientation": "portrait-primary",
   "theme_color": "#2563eb",
-  "background_color": "#e84351",
+  "background_color": "#5c56b5",
   "categories": ["finance", "business", "banking"],
   "lang": "en",
   "dir": "ltr",

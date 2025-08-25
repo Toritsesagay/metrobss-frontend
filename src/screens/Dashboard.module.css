@@ -106,7 +106,7 @@
 }
 
 .recentAmount span {
-    background-color: #e84351;
+    background-color: #5c56b5;
 
 }
 
@@ -114,7 +114,7 @@
 .recentSend span,
 .recentPay span {
     background-color: rgb(255, 221, 221);
-    color: #e84351;
+    color: #5c56b5;
 
 }
 
@@ -153,7 +153,7 @@
 .customCardWrapper .rccs {
   border-radius: 20px !important;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2) !important;
-  background: linear-gradient(135deg, #e84351, #d23742) !important;
+  background: linear-gradient(135deg, #5c56b5, #d23742) !important;
 }
 
 .customCardWrapper .rccs__number, 
@@ -179,7 +179,7 @@
 .sectionTitle {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #e84351;
+  color: #5c56b5;
   margin-bottom: 1rem;
   border-bottom: 2px solid rgba(232, 67, 81, 0.2);
   padding-bottom: 0.5rem;
@@ -238,7 +238,7 @@
 
 .active {
   background: rgba(232, 67, 81, 0.15);
-  color: #e84351;
+  color: #5c56b5;
 }
 
 .inactive {
@@ -248,7 +248,7 @@
 
 
 .bankName h3 {
-    color: #e84351;
+    color: #5c56b5;
     margin-bottom: 30px;
     font-size: 1.4rem;
 }
@@ -315,7 +315,7 @@
 }
 
 .primaryBtn {
-  background: #e84351;
+  background: #5c56b5;
   color: white;
   box-shadow: 0 4px 10px rgba(232, 67, 81, 0.3);
 }
@@ -357,7 +357,7 @@
     color: rgb(81, 81, 81);
     font-size: 1.6rem;
     font-family: ABeeZee;
-    color:#e84351;
+    color:#5c56b5;
     font-weight: 300;
     margin: 0px;
 }
@@ -403,7 +403,7 @@
 
 .passportContainer h4{
     font-weight: 300;
-    color: #e84351;
+    color: #5c56b5;
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 30px;
@@ -433,7 +433,7 @@
 
 .summary h4{
     font-weight: 300;
-    color: #e84351;
+    color: #5c56b5;
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 30px;
@@ -482,7 +482,7 @@
 }
 
 .summarySection h6 {
-    color: #e84351;
+    color: #5c56b5;
     margin-bottom: 30px;
     font-size: 1.3rem;
 
@@ -520,7 +520,7 @@
 .block{
     width:6px;
     height:18px;
-    background-color:  #e84351;
+    background-color:  #5c56b5;
     display: inline-block;
     margin-right: 5px;
     color:rgb(153, 160, 153);
@@ -538,7 +538,7 @@
 
 .header {
     width: 100%;
-    /*background-color: #e84351;*/
+    /*background-color: #5c56b5;*/
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -636,7 +636,7 @@ table td {
 
 .pay {
     width: 60px;
-    color: #e84351;
+    color: #5c56b5;
     cursor: pointer;
     font-weight: 600;
 }
@@ -696,7 +696,7 @@ table td {
 
 .metricIcon {
   font-size: 1.5rem;
-  color: #e84351;
+  color: #5c56b5;
   margin-bottom: 0.75rem;
 }
 

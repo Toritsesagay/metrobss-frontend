@@ -38,7 +38,7 @@
 }
 
 .favoriteCard button {
-  background: var(--primary, #e84351); /* keep your brand */
+  background: var(--primary, #5c56b5); /* keep your brand */
   color: #fff;
   border: none;
   padding: 12px 22px;
@@ -49,7 +49,7 @@
 }
 
 .favoriteCard button:hover {
-  background: #c73644; /* slightly darker hover */
+  background: #5c56b5; /* slightly darker hover */
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
