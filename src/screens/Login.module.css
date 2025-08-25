@@ -2,8 +2,9 @@
 .screenContainer {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     min-height: 100vh;
+    padding-top:30px;
     position: relative;
 
     /* Combine fade overlay + image in one background declaration */
@@ -13,7 +14,7 @@
 }
 
 .welcomeText {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: center;
     margin-bottom: 30px;
     color:#e1e1e1

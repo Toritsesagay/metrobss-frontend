@@ -40,7 +40,7 @@ function LandingPage() {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.4, duration: 0.6 }}
                             >
-                                <h2>Welcome</h2>
+                                <h2 style={{fontSize:'2rem'}}>Welcome</h2>
                             </motion.div>
 
                             <motion.p 
