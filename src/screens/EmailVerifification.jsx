@@ -7,7 +7,6 @@ import LoadingModal from "../components/Modal/LoadingModal";
 import Modal from "../components/Modal/Modal";
 //import routers
 import { useNavigate, useParams } from 'react-router-dom';
-import Spinner from "react-activity/dist/Spinner"
 import "react-activity/dist/Spinner.css";
 
 

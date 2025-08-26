@@ -14,7 +14,7 @@ function CardDetails() {
     let [isInfo, setIsInfo] = useState(false);
     let [isLoading, setIsLoading] = useState(false);
     let [card, setIsCard] = useState(null);
-    let [isError, setIsError] = useState(false);
+    let [isError, setIsError] =  useState(false);
     let [isErrorInfo, setIsErrorInfo] = useState('');
     let [isConfirm, setIsConfirm] = useState(false);
     let { user, accounts, cards } = useSelector(state => state.userAuth);
