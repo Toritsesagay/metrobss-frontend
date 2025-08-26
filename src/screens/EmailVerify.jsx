@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import styles from './EmailVerify.module.css';
 import { checkverification } from "../store/action/userAppStorage";
 import { useDispatch } from "react-redux";
+// importing modals
 import LoadingModal from "../components/Modal/LoadingModal";
 import Modal from "../components/Modal/Modal";
+// importing routers
 import { useNavigate, useParams } from 'react-router-dom';
 import SubmitBtn from "../components/Submit";
 
@@ -18,20 +20,17 @@ function EmailVerify() {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
-    // Close modal handler
     const closeModal = () => {
         setIsError(false);
         setIsSignout(false);
     };
 
-    // Redirect if no ID in params
     useEffect(() => {
         if (!id) {
             navigate('/signup');
         }
     }, [id, navigate]);
 
-    // Preloader timeout
     useEffect(() => {
         const timer = setTimeout(() => {
             setPreloader(false);
@@ -39,7 +38,20 @@ function EmailVerify() {
         return () => clearTimeout(timer);
     }, []);
 
-    
+    const continueHandler = async () => {
+        const res = await dispatch(checkverification(id));
+        if (!res.bool) {
+            console.log(res);
+            return;
+        }
+        // navigate to phone number setup or next step
+        // navigate('/phone-setup');
+    };
+
+    useEffect(() => {
+        const interval = setInterval(continueHandler, 1000);
+        return () => clearInterval(interval);
+    }, [id]); 
 
     const submitHandler = () => {
         navigate('/signup');
@@ -61,9 +73,9 @@ function EmailVerify() {
                         e.preventDefault();
                         submitHandler();
                     }}>
-                        <SubmitBtn
-                            text='Email didn’t arrive?'
-                            style={{ borderRadius: '8px', marginBottom: '15px', marginTop: '15px' }}
+                        <SubmitBtn 
+                            text="Email didn't arrive?" 
+                            style={{ borderRadius: '8px', marginBottom: '15px', marginTop: '15px' }} 
                         />
                     </form>
                 </div>
