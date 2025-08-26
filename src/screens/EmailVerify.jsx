@@ -39,36 +39,7 @@ function EmailVerify() {
         return () => clearTimeout(timer);
     }, []);
 
-    // Email verification checker
-    const continueHandler = async () => {
-        try {
-            setIsLoading(true);
-            const res = await dispatch(checkverification(id));
-            setIsLoading(false);
-
-            if (!res?.bool) {
-                console.log("Verification failed:", res);
-                return;
-            }
-
-            // On successful verification
-            navigate('/next-step'); // Change this to your actual next route
-        } catch (err) {
-            console.error("Verification error:", err);
-            setIsLoading(false);
-            setIsError(true);
-            setIsErrorInfo("Something went wrong verifying your email.");
-        }
-    };
-
-    // Polling effect
-    useEffect(() => {
-        const interval = setInterval(() => {
-            continueHandler();
-        }, 1000);
-
-        return () => clearInterval(interval);
-    }, []); // Only run once
+    
 
     const submitHandler = () => {
         navigate('/signup');
