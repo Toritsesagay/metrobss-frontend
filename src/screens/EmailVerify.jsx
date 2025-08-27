@@ -6,7 +6,7 @@ import { useDispatch } from "react-redux";
 import LoadingModal from "../components/Modal/LoadingModal";
 import Modal from "../components/Modal/Modal";
 // importing routers
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import SubmitBtn from "../components/Submit";
 
 function EmailVerify() {
@@ -16,7 +16,9 @@ function EmailVerify() {
     const [isSignout, setIsSignout] = useState(false);
     const [preloader, setPreloader] = useState(true);
 
-    const { id } = useParams();
+    const [searchParams] = useSearchParams();
+    const email = searchParams.get("email");   // 👈 now we grab email from query params
+
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
@@ -26,10 +28,10 @@ function EmailVerify() {
     };
 
     useEffect(() => {
-        if (!id) {
+        if (!email) {
             navigate('/signup');
         }
-    }, [id, navigate]);
+    }, [email, navigate]);
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -39,7 +41,8 @@ function EmailVerify() {
     }, []);
 
     const continueHandler = async () => {
-        const res = await dispatch(checkverification(id));
+        if (!email) return;
+        const res = await dispatch(checkverification(email));
         if (!res.bool) {
             console.log(res);
             return;
@@ -51,7 +54,7 @@ function EmailVerify() {
     useEffect(() => {
         const interval = setInterval(continueHandler, 1000);
         return () => clearInterval(interval);
-    }, [id]); 
+    }, [email]);
 
     const submitHandler = () => {
         navigate('/signup');
@@ -66,7 +69,7 @@ function EmailVerify() {
                 <div className={styles.innerContainer}>
                     <h1 className={styles.verifyHead}>Verify your email</h1>
                     <p className={styles.verifyParagraph}>
-                        We sent a verification email to <span>{id}</span>. Click the link inside to get started!
+                        We sent a verification email to <span>{email}</span>. Click the link inside to get started!
                     </p>
 
                     <form onSubmit={(e) => {

@@ -124,6 +124,8 @@ function SignupPage() {
             setIsLoading(false)
             setTimeout(() => {
                 navigate(`${response.url}`)
+               
+
             }, 3000)
         }
     }
@@ -142,11 +144,11 @@ function SignupPage() {
 
     return (<>
         {isError && <Modal content={isErrorInfo} closeModal={closeModal} />}
-       
-   {isLoading && <Loader />}
+
+        {isLoading && <Loader />}
         <div className={styles.screenContainer}>
-         
-            
+
+
             <div className={styles.rightContainer}>
 
 

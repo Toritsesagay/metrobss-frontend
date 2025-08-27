@@ -109,10 +109,12 @@ export const signup = (data) => {
         return {
           bool: true,
           message: data.response,
-          url: `/verify/${data.user.email}`
+          url: `/verify?email=${data.user.email}`
+           
         }
       }
     } catch (err) {
+      console.log(err)
       return {
         bool: false,
         message: "network error",

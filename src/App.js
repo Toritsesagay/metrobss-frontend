@@ -4,6 +4,7 @@ import './App.css';
 import FallBack from './components/Fallback';
 import OfflineNotification from './components/OfflineNotification';
 import { useSelector } from "react-redux";
+import EmailVerify from  './screens/EmailVerify'
 
 const Home = React.lazy(() => import('./screens/Home'))
 
@@ -17,7 +18,7 @@ const Current = React.lazy(() => import('./screens/Current'))
 const Savings = React.lazy(() => import('./screens/Savings'))
 const Login = React.lazy(() => import('./screens/Login'))
 const Signup = React.lazy(() => import('./screens/Signup'))
-const EmailVerify = React.lazy(() => import('./screens/EmailVerify'))
+
 const EmailVerifification = React.lazy(() => import('./screens/EmailVerifification'))
 const RegisterationPage = React.lazy(() => import("./screens/Registeration"))
 const ForgetPassword = React.lazy(() => import("./screens/ForgetPassword"))
