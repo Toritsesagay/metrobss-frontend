@@ -109,7 +109,7 @@ export const signup = (data) => {
         return {
           bool: true,
           message: data.response,
-          url: `/verify?email=${data.user.email}`
+          url: `/verify/${data.user.email}`
            
         }
       }

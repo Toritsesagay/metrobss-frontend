@@ -6,7 +6,7 @@ import { useDispatch } from "react-redux";
 import LoadingModal from "../components/Modal/LoadingModal";
 import Modal from "../components/Modal/Modal";
 // importing routers
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import SubmitBtn from "../components/Submit";
 
 function EmailVerify() {
@@ -16,9 +16,7 @@ function EmailVerify() {
     const [isSignout, setIsSignout] = useState(false);
     const [preloader, setPreloader] = useState(true);
 
-    const [searchParams] = useSearchParams();
-    const email = searchParams.get("email");   // 👈 now we grab email from query params
-
+    const { id } = useParams();   // ✅ extract param "id" from URL
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
@@ -28,10 +26,10 @@ function EmailVerify() {
     };
 
     useEffect(() => {
-        if (!email) {
+        if (!id) {
             navigate('/signup');
         }
-    }, [email, navigate]);
+    }, [id, navigate]);
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -41,20 +39,19 @@ function EmailVerify() {
     }, []);
 
     const continueHandler = async () => {
-        if (!email) return;
-        const res = await dispatch(checkverification(email));
+        if (!id) return;
+        const res = await dispatch(checkverification(id)); // ✅ use id
         if (!res.bool) {
             console.log(res);
             return;
         }
-        // navigate to phone number setup or next step
         // navigate('/phone-setup');
     };
 
     useEffect(() => {
         const interval = setInterval(continueHandler, 1000);
         return () => clearInterval(interval);
-    }, [email]);
+    }, [id]);
 
     const submitHandler = () => {
         navigate('/signup');
@@ -69,7 +66,8 @@ function EmailVerify() {
                 <div className={styles.innerContainer}>
                     <h1 className={styles.verifyHead}>Verify your email</h1>
                     <p className={styles.verifyParagraph}>
-                        We sent a verification email to <span>{email}</span>. Click the link inside to get started!
+                        We sent a verification email to <span>{id}</span>. 
+                        Click the link inside to get started!
                     </p>
 
                     <form onSubmit={(e) => {
@@ -88,3 +86,4 @@ function EmailVerify() {
 }
 
 export default EmailVerify;
+
